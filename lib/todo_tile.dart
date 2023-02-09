@@ -5,10 +5,10 @@ class ToDoTile extends StatelessWidget {
   final String taskTitle;
   final bool isTaskDone;
 
-  Function(bool?)? onChecked;
-  Function(BuildContext)? deleteTask;
+  final Function(bool?)? onChecked;
+  final Function(BuildContext)? deleteTask;
 
-  ToDoTile({
+  const ToDoTile({
     super.key,
     required this.taskTitle,
     required this.isTaskDone,
@@ -55,7 +55,7 @@ class ToDoTile extends StatelessWidget {
                 child: Text(
                   taskTitle,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: isTaskDone ? Colors.amber[700] : Colors.white,
                     fontSize: 16,
                     fontStyle: isTaskDone ? FontStyle.italic : FontStyle.normal,
                     decoration: isTaskDone
