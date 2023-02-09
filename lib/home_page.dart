@@ -33,11 +33,13 @@ class _HomePageState extends State<HomePage> {
   }
 
   void saveTask() {
-    setState(() {
-      toDoList.add([_taskTextController.text, false]);
-    });
-    Navigator.of(context).pop();
-    _taskTextController.clear();
+    if (_taskTextController.text.isNotEmpty) {
+      setState(() {
+        toDoList.add([_taskTextController.text, false]);
+      });
+      Navigator.of(context).pop();
+      _taskTextController.clear();
+    }
   }
 
   void createNewTask() {
