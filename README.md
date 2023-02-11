@@ -1,16 +1,10 @@
 # todo_app
 
-A new Flutter project.
+A simple TO DO app written in Flutter with Hive database.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<img src="/Screens/ios_list.png" width="240"> <img src="/Screens/ios_add.png" width="240"> <img src="/Screens/ios_add_keyboard.png" width="240"> <img src="/Screens/ios_delete.png" width="240"> 
 
-A few resources to get you started if this is your first Flutter project:
+and initial screen from Android device:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="/Screens/android_empty.png" width="240">
